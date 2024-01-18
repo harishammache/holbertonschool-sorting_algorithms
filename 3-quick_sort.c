@@ -13,8 +13,8 @@ void swap(int *a, int *b)
 /**
  * lomuto - Lomuto scheme for Quick Sort
  * @array: Array to be partitioned
- * @low: Starting index of the partition
- * @high: Ending index of the partition
+ * @left: Starting index of the partition
+ * @right: Ending index of the partition
  * @size: Size of the array
  * Return: Index of the pivot after partitioning
  */
@@ -47,11 +47,11 @@ int lomuto(int *array, size_t size, int left, int right)
 /**
  * quick_sort_recursive - Recursive function to implement Quick Sort
  * @array: Array to be sorted
- * @low: Starting index of the array
- * @high: Ending index of the array
+ * @left: Starting index of the array
+ * @right: Ending index of the array
  * @size: Size of the array
  */
-void quick_sort_recursive(int *array ,size_t size, int left, int right)
+void quick_sort_recursive(int *array, size_t size, int left, int right)
 {
 	int part;
 
